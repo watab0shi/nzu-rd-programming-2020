@@ -33,7 +33,7 @@ function draw() {
 
 ### 実行結果
 
-<live-demo src="/resource/livedemo/p5js/intro/"></live-demo>
+<live-demo src="/resource/livedemo/intro/"></live-demo>
 
 ### 補足情報
 

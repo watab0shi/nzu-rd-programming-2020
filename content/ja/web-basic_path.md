@@ -24,6 +24,12 @@ category: Web基礎知識
             └── image.png
 ```
 
+<alert type="warning">
+
+以下の説明は `VSCode` の `Live Server` を使って `localhost:5500` にサーバーを立てている想定で書いてあります。
+
+</alert>
+
 ## 絶対パス
 
 プロトコル（`http:` or `https:`）から始まるパスを「絶対パス」といいます。

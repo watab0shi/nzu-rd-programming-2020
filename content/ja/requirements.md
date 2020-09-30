@@ -26,6 +26,7 @@ Windowsの設定で Google Chrome を既定のブラウザにしておくこと�
 <img src="/resource/image/requirements_screenshot-p5js.png" width="1280" height="720" alt="p5js Editorのスクリーンショット"/>
 
 p5.js のスケッチをWebブラウザ上で簡単に記述、実行、保存ができる公式のエディタです。
+Webエディタなので、ページにアクセスするだけで使用できます。
 
 ## Google アカウント
 

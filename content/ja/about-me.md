@@ -31,10 +31,9 @@ category: ''
 
 <youtube-iframe src="https://www.youtube.com/embed/pL599PQWFP8?rel=0"></youtube-iframe>
 
-修了制作「[on your palm](https://www.instagram.com/p/B2nhQbmDJ0m/)」
+修了制作「on your palm」
 
-<instagram-embed src="https://www.instagram.com/p/B2nhQbmDJ0m/?utm_source=ig_embed&amp;utm_campaign=loading"></instagram-embed>
-<script async src="//www.instagram.com/embed.js"></script>
+<video src="https://scontent-sjc3-1.cdninstagram.com/v/t50.2886-16/71149833_117140556078264_877543955553902520_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5mZWVkLmRlZmF1bHQiLCJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSJ9&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=euUsW64dt7UAX-AwXlu&vs=18034106365202645_3203403167&_nc_vs=HBksFQAYJEdBbXBQUVM0M0R2cGlXb0FBTGpmbEFHVXFTME1ia1lMQUFBRhUAAsgBABUAGCRHTG1GUFFTMkxyRjdCcklBQUZTSHhXN1d5bFFsYmtZTEFBQUYVAgLIAQAoABgAGwAVAAAYABaquueAkvuIQBUCKAJDMywXQE37peNT988YEmRhc2hfYmFzZWxpbmVfMV92MREAdeoHAA%3D%3D&oe=5F7718D6&oh=e2d3849248473912b32e2787c0316341" muted playsinline controls></video>
 
 
 ### 実績

@@ -7,7 +7,6 @@ category: p5.js
 
 <img src="/resource/image/p5js_editor_explain.png" alt="p5.js Editor の説明"/>
 
-
 ## コードエディタ
 
 プログラムを書くところです。
@@ -38,6 +37,54 @@ category: p5.js
 
 新規作成した場合はランダムな英単語で命名されるため、保存する際にスケッチの内容に応じて名前をつけましょう。
 クリックすると編集ができます。
+
+## ファイル
+
+コードエディタ左上の矢印をクリックするとこのスケッチを構成する `index.html` `style.css` `sketch.js` のファイルが確認できます。
+
+<img src="/resource/image/p5js_editor_files.png" alt="p5.js Editor ファイル"/>
+
+デフォルトで以下の `html` `css` `js` が記載されています。
+
+```html[index.html]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
+```
+
+`head` 内の `script` タグで読み込んでいるのが `p5.js` のライブラリ本体です。
+`p5.sound.min.js` のほうは、サウンド機能を使うときのみ必要なものなので、サウンドを使用しない場合はなくても大丈夫です。
+
+`body` の中の `script` タグで自分で書いた `sketch.js` を読み込んでいます。
+
+```css[style.css]
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+```
+
+```javascript[sketch.js]
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}
+```
 
 ## ログイン
 
