@@ -1,0 +1,169 @@
+---
+title: 処理の流れ
+description: ''
+position: 6.2
+category: p5.js
+---
+
+新規にスケッチを開くと、デフォルトで以下のコードが書かれた状態になっています。  
+最も簡単なこのコードから説明していきます。
+
+```javascript[sketch.js]
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+}
+```
+
+<alert type="success">
+
+プログラム内の `400` や `220` の数値を変えて実行し、実行結果のどこが変化するか試してみましょう！
+
+</alert>
+
+## 関数
+
+関数とは、プログラムの処理をひとまとまりにしたもののことです。
+
+### 関数定義
+
+関数を定義するときの書き方です。
+
+```javascript
+function 関数名(引数, 引数, ...) {
+
+}
+```
+
+`function setup() {}` と `function draw() {}` は関数定義です。  
+
+処理のまとまりに名前と引数（入力）をつけたものなので、関数定義だけでは何も起きません。
+
+自分で定義する関数の`()`の中に入る引数は用途に応じて増減や省略が可能です。
+
+### 関数実行
+
+定義された関数を実行する際の書き方です。
+
+```javascript
+関数名(引数);
+```
+
+|コード|関数名|引数|
+|:--|:--|:--|
+|`createCanvas(400, 400)`|`createCanvas`|`400` `400`|
+|`background(220)`|`background`|`220`|
+
+### 行末のセミコロン
+行の終わりには、「次の処理へいくよ」の合図しとて改行の前にセミコロン `;` をつけます。
+
+<alert>
+
+実を言うとJavaScriptでは、<strong>行末のセミコロンはなくても動作します。</strong>  
+セミコロンを省略した場合、改行位置やコードの次に来る文字からブラウザが自動で解釈してくれます。  
+
+</alert>
+
+<alert type="warning">
+
+<strong>セミコロン必要派か不要派かは職業プログラマーでも意見が分かれる</strong>くらいなので本当はどっちでも大丈夫なのですが、`p5.js`のコードはセミコロンありで書かれているため、<strong>本演習ではセミコロンありを採用しています。</strong>
+
+</alert>
+
+## setup関数
+
+スケッチの初期化をするところです。  
+ページ表示時に `p5.js` 側で一度だけ実行されます。
+
+```javascript[sketch.js]
+function setup() {
+  createCanvas(400, 400);
+}
+```
+
+`createCanvas(400, 400);` でHTMLに `400px x 400px` の `canvas` 要素を追加しています。
+
+参照：[createCanvas() reference | p5.js](https://p5js.org/reference/#/p5/createCanvas)
+
+### canvas要素とは
+
+実行結果の背景色が付いている上で `右クリック > 検証` して開発者ツール（DevTools）で要素を確認すると、以下のような`canvas`要素が生成されていることがわかります。
+
+```html
+<canvas id="defaultCanvas0" class="p5Canvas" width="400" height="400" style="width: 400px; height: 400px;"></canvas>
+```
+
+`canvas` 要素はWebページ上でグラフィックを描画するための要素です。
+
+<alert>
+
+ライブラリ（ `p5.js` ） を使わなくても `Canvas API` や `WebGL API` を使用して `canvas` 要素にグラフィックを描画することは可能ですが、複雑な設定が多くコードが長くなるため、`p5.js` ではそれらを簡単に扱えるようにいいかんじに統合してくれています。
+
+</alert>
+
+## draw関数
+
+描画処理を書くところです。  
+`p5.js` 側で `setup()` が実行されたあと、プログラムを停止するまで毎秒約60回実行されます。  
+グラフィックを描画する関数に渡す数値を実行中に動的に変化させることでアニメーションさせることができます。
+
+```javascript[sketch.js]
+function draw() {
+  background(220);
+}
+```
+
+`background(220);` で `canvas` の背景を指定した色（この場合明るいグレー）で塗りつぶします。
+
+### background関数
+
+`background` 関数はその名の通り背景の色を指定する関数です。  
+色の指定は `0` ~ `255` までの数値で行います。
+
+引数の渡し方のパターンはたくさんありますが、ここでは `0` ~ `255` の数値を渡して色を指定する２つのパターンを紹介します。
+
+```javascript
+background(220);
+```
+
+引数に１つの数値を渡した場合、グレースケールの指定になります。  
+`0`のときは黒、`255`のときは白になります。
+
+```javascript
+background(0, 205, 129);
+```
+
+引数に３つの数値を渡した場合、<strong>RGB</strong> での色指定になります。
+
+参照：[background() reference | p5.js](https://p5js.org/reference/#/p5/background)
+
+<alert type="success">
+
+スケッチの `background` 関数をグレースケール指定から<strong> RGB 指定にして、好きな色に変えてみましょう！</strong>  
+<small>
+「`0` ~ `255` がわかりにくい！」という方は、Googleで「カラーピッカー」と検索してみてください。  
+推しカラーにしてみるのもいいかも！
+</small>
+
+</alert>
+
+<alert type="success">
+
+RGB 指定にできたら、<strong>スケッチの名前を「`background-RGB`」に変更して保存</strong>しましょう！
+
+</alert>
+
+<alert>
+
+なぜ RGB が `0` ~ `255` なのかは
+<nuxt-link to="/web-basic_color">Web基礎知識 - 色について</nuxt-link>
+を参照
+
+</alert>
+
+
+## フロー図
+<static-img src="resource/image/p5js_flow.png" alt="保存"></static-img>

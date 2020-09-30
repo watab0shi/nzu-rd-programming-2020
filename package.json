@@ -1,0 +1,23 @@
+{
+  "name": "nzu-rd-programming-2020",
+  "version": "1.0.0",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=\"local\" nuxt",
+    "build": "cross-env NODE_ENV=\"production\" nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env NODE_ENV=\"production\" nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/content-theme-docs": "^0.6.0",
+    "cross-env": "^7.0.2",
+    "nuxt": "^2.14.5"
+  },
+  "devDependencies": {}
+}
