@@ -12,7 +12,7 @@ category: p5.js
 プログラムでグラフィックを描画するにあたって、まず画面の座標系を把握しておく必要があります。
 例えば、点をひとつ描画するにしてもどこのピクセルに点を打つのかを正確に数字で示さないといけません。
 
-<static-img src="resource/image/p5js_primitives.png"></static-img>
+<img src="/resource/image/p5js_primitives.png"/>
 
 数学のグラフを上下逆さまにしたものと思ってください。
 2Dの座標系の場合は<strong>左上が原点で、右に行くほど x がプラス、下に行くほど y がプラス</strong>になります。
@@ -115,7 +115,7 @@ function setup() {
 
 #### ライブデモ
 
-<live-demo src="resource/livedemo/p5js/loop/while/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/loop/while/"></live-demo>
 
 ### 繰り返し：for文
 
@@ -132,7 +132,7 @@ function setup() {
 
 #### ライブデモ
 
-<live-demo src="resource/livedemo/p5js/loop/for/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/loop/for/"></live-demo>
 
 
 ### 繰り返し：for文
@@ -151,7 +151,7 @@ function setup() {
 
 #### ライブデモ
 
-<live-demo src="resource/livedemo/p5js/loop/for-times/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/loop/for-times/"></live-demo>
 
 
 ### ブロック / スコープ / インデント

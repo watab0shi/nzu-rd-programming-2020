@@ -8,11 +8,11 @@ category: JavaScript基礎
 ## JavaScriptの役割
 
 <div class="flex justify-around">
-  <static-img src="resource/image/common_logo-html5-light.svg" class="light-img" width="128" height="128" alt="HTML5ロゴ"></static-img>
-  <static-img src="resource/image/common_logo-html5-dark.svg" class="dark-img" width="128" height="128" alt="HTML5ロゴ"></static-img>
-  <static-img src="resource/image/common_logo-css3-light.svg" class="light-img" width="128" height="128" alt="CSS3ロゴ"></static-img>
-  <static-img src="resource/image/common_logo-css3-dark.svg" class="dark-img" width="128" height="128" alt="CSS3ロゴ"></static-img>
-  <static-img src="resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"></static-img>
+  <img src="/resource/image/common_logo-html5-light.svg" class="light-img" width="128" height="128" alt="HTML5ロゴ"/>
+  <img src="/resource/image/common_logo-html5-dark.svg" class="dark-img" width="128" height="128" alt="HTML5ロゴ"/>
+  <img src="/resource/image/common_logo-css3-light.svg" class="light-img" width="128" height="128" alt="CSS3ロゴ"/>
+  <img src="/resource/image/common_logo-css3-dark.svg" class="dark-img" width="128" height="128" alt="CSS3ロゴ"/>
+  <img src="/resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"/>
 </div>
 
 JavaScriptはWebブラウザー上で動作するプログラミング言語です。  
@@ -43,7 +43,7 @@ Webページは `HTML` `CSS` `JavaScript` の3つの言語によって構成さ�
 
 #### ライブデモ
 
-<live-demo src="resource/livedemo/js-about/html/"></live-demo>
+<live-demo src="/resource/livedemo/js-about/html/"></live-demo>
 
 「NZU Programming WS 2020」という見出しテキストを設置しただけの状態です。  
 HTMLのみの場合、表示しているブラウザのデフォルトのスタイルが適用されます。
@@ -71,7 +71,7 @@ body {
 
 #### ライブデモ
 
-<live-demo src="resource/livedemo/js-about/html-css/"></live-demo>
+<live-demo src="/resource/livedemo/js-about/html-css/"></live-demo>
 
 CSSでスタイルを追加すると、ブラウザのデフォルトスタイルを上書きして見た目をカスタマイズできます。  
 `ress.min.css`はブラウザごとに異なるデフォルトスタイルの差異をなくすためのものです。  
@@ -105,7 +105,7 @@ element.onclick = function() {
 #### ライブデモ
 見出しをクリック
 
-<live-demo src="resource/livedemo/js-about/html-css-js/"></live-demo>
+<live-demo src="/resource/livedemo/js-about/html-css-js/"></live-demo>
 
 JavaScriptを使用すると、ページ表示後の動作を定義できます。  
 ここでは見出しをクリックしたときにh1要素のクラスを付け外しして、文字色が緑と黒に切り替わるようにしています。
@@ -113,9 +113,9 @@ JavaScriptを使用すると、ページ表示後の動作を定義できます�
 ## JavaとJavaScript
 
 <div class="flex items-center justify-around text-center">
-  <static-img src="resource/image/common_logo-java.svg" width="128" height="128" alt="Javaロゴ"></static-img>
+  <img src="/resource/image/common_logo-java.svg" width="128" height="128" alt="Javaロゴ"/>
   <span class="text-6xl">≠</span>
-  <static-img src="resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"></static-img>
+  <img src="/resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"/>
 </div>
 
 JavaScriptと名前のよく似た「Java」というプログラミング言語も存在しますが、<strong>「Java」と「JavaScript」は全く別物</strong>です！メロンとメロンパンくらい違います！  

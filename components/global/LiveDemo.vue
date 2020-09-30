@@ -5,7 +5,7 @@
     frameborder="0"
     ref="iframe"
     :style="`height: ${ height }px`"
-    :src="baseUrl + src"
+    :src="src"
     @load="setHeight"
   ></iframe>
 </template>
@@ -17,13 +17,7 @@ export default {
   props: ['src'],
   data() {
     return {
-
-      height: 100
-    }
-  },
-  computed: {
-    baseUrl() {
-      return process.env.baseUrl;
+      height: 400
     }
   },
   methods: {

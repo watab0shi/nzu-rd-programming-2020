@@ -8,8 +8,8 @@ category: ''
 ## 演習内容
 
 <div class="flex justify-around items-center">
-  <static-img src="resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"></static-img>
-  <static-img src="resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"/></static-img>
+  <img src="/resource/image/common_logo-js.svg" width="128" height="128" alt="JavaScriptロゴ"/>
+  <img src="/resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"//>
 </div>
 
 <strong>JavaScript</strong>（じゃばすくりぷと）の基礎を学びながら、そのライブラリである<strong>p5.js</strong>（ぴーふぁいぶじぇーえす）を使用して<strong>ジェネラティブアート / インタラクティブアートの制作</strong>を行います。
@@ -33,7 +33,7 @@ function draw() {
 
 ### 実行結果
 
-<live-demo src="resource/livedemo/p5js/intro/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/intro/"></live-demo>
 
 ### 補足情報
 

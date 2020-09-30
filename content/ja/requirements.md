@@ -7,7 +7,7 @@ category: ''
 
 ## Google Chrome
 
-<static-img src="resource/image/requirements_icon-chrome.png" width="128" height="128" alt="Google Chrome"></static-img>
+<img src="/resource/image/requirements_icon-chrome.png" width="128" height="128" alt="Google Chrome"/>
 
 [Google Chrome](https://www.google.com/intl/ja_jp/chrome/)  
 
@@ -19,11 +19,11 @@ Windowsの設定で Google Chrome を既定のブラウザにしておくこと�
 
 ## p5.js Editor
 
-<static-img src="resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"></static-img>
+<img src="/resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"/>
 
 [p5.js Web Editor](https://editor.p5js.org/)
 
-<static-img src="resource/image/requirements_screenshot-p5js.png" width="1280" height="720" alt="p5js Editorのスクリーンショット"></static-img>
+<img src="/resource/image/requirements_screenshot-p5js.png" width="1280" height="720" alt="p5js Editorのスクリーンショット"/>
 
 p5.js のスケッチをWebブラウザ上で簡単に記述、実行、保存ができる公式のエディタです。
 
@@ -33,7 +33,7 @@ p5.js Editor 上でスケッチを保存するためには、ユーザー登録�
 
 ## Visual Studio Code
 
-<static-img src="resource/image/requirements_icon-vscode.png" width="128" height="128" alt="Visual Studio Code"></static-img>
+<img src="/resource/image/requirements_icon-vscode.png" width="128" height="128" alt="Visual Studio Code"/>
 
 [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)  
 

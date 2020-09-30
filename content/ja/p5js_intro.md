@@ -9,7 +9,7 @@ category: p5.js
 
 ### Processing
 
-<static-img src="resource/image/p5js_intro_logo-p5.png" alt="Processing" width="128" height="128"></static-img>
+<img src="/resource/image/p5js_intro_logo-p5.png" alt="Processing" width="128" height="128"/>
 
 [Processing](https://processing.org/)
 
@@ -22,7 +22,7 @@ Processingではプログラムのことをスケッチ（`sketch`）と呼び�
 
 ## p5.js
 
-<static-img src="resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"></static-img>
+<img src="/resource/image/common_logo-p5js.svg" width="128" height="58" alt="p5.js"/>
 
 上記のProcessingをWebブラウザ上で動作するようにJavaScriptに移植したものです。  
 p5.jsはJavaScriptライブラリとして公開されています。
@@ -36,7 +36,7 @@ p5.js Editor 上で作成したスケッチはログインすることで保存�
 
 [p5.js Web Editor](https://editor.p5js.org/)
 
-<static-img src="resource/image/p5js_intro_editor.png" alt="p5.js Editor"></static-img>
+<img src="/resource/image/p5js_intro_editor.png" alt="p5.js Editor"/>
 
 
 ### なにができる？
@@ -51,12 +51,12 @@ p5.js Editor 上で作成したスケッチはログインすることで保存�
 
 [examples | p5.js](https://p5js.org/examples/)
 
-<static-img src="resource/image/p5js_intro_p5js-examples.png" alt="p5.js Editor"></static-img>
+<img src="/resource/image/p5js_intro_p5js-examples.png" alt="p5.js Editor"/>
 
 #### OpenProcessing
 
-p5.jsのスケッチを投稿するギャラリーサイトもあります。
+p5.jsのスケッチを投稿するギャラリーサイトです。
 
 [OpenProcessing](https://www.openprocessing.org/browse/#)
 
-<static-img src="resource/image/p5js_intro_openprocessing.png" alt="p5.js Editor"></static-img>
+<img src="/resource/image/p5js_intro_openprocessing.png" alt="p5.js Editor"/>

@@ -5,7 +5,7 @@ position: 6.1
 category: p5.js
 ---
 
-<static-img src="resource/image/p5js_editor_explain.png" alt="p5.js Editor の説明"></static-img>
+<img src="/resource/image/p5js_editor_explain.png" alt="p5.js Editor の説明"/>
 
 
 ## コードエディタ
@@ -49,7 +49,7 @@ Googleアカウントで `p5.js Editor` にログインしよう！
 
 </alert>
 
-<static-img src="resource/image/p5js_editor_login.png" alt="Googleアカウントでログイン"></static-img>
+<img src="/resource/image/p5js_editor_login.png" alt="Googleアカウントでログイン"/>
 
 ## ユーザー名を編集
 
@@ -61,11 +61,11 @@ Googleアカウントで `p5.js Editor` にログインしよう！
 
 エディタ右上のアカウント名 > Settings をクリック。
 
-<static-img src="resource/image/p5js_editor_account-settings.png" alt="Googleアカウントでログイン"></static-img>
+<img src="/resource/image/p5js_editor_account-settings.png" alt="Googleアカウントでログイン"/>
 
 ユーザー名はデフォルトでGoogleアカウントのユーザー名になっているため、学籍番号に変更して保存。
 
-<static-img src="resource/image/p5js_editor_edit-username.png" alt="ユーザー名を学籍番号に変更"></static-img>
+<img src="/resource/image/p5js_editor_edit-username.png" alt="ユーザー名を学籍番号に変更"/>
 
 <alert type="warning">
 
@@ -78,17 +78,17 @@ Googleアカウントで `p5.js Editor` にログインしよう！
 
 `メニュー > File > Save` をクリック または、`Ctrl + S`　でスケッチを保存できます。
 
-<static-img src="resource/image/p5js_editor_save.png" alt="保存"></static-img>
+<img src="/resource/image/p5js_editor_save.png" alt="保存"/>
 
 ## 自分のスケッチ一覧
 
 `メニュー > File > Open` をクリック または、`右上のアカウント名 > My Sketches` で保存したスケッチの一覧ページに遷移します。
 
-<static-img src="resource/image/p5js_editor_my-sketches.png" alt="スケッチ一覧"></static-img>
+<img src="/resource/image/p5js_editor_my-sketches.png" alt="スケッチ一覧"/>
 
 また、リストの右端にある矢印から「スケッチ名変更」「ファイル一式ダウンロード」「複製」「コレクションに追加」「削除」ができます。
 
-<static-img src="resource/image/p5js_editor_my-sketches-menu.png" alt="スケッチ一覧 メニュー"></static-img>
+<img src="/resource/image/p5js_editor_my-sketches-menu.png" alt="スケッチ一覧 メニュー"/>
 
 <alert>
 

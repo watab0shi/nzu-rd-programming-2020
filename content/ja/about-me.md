@@ -7,7 +7,7 @@ category: ''
 
 ## 可児亘（Kani Wataru）
 
-<static-img src="resource/image/about-me_pct-teacher.jpg" width="128" height="128" alt="可児亘（Kani Wataru）"></static-img>
+<img src="/resource/image/about-me_pct-teacher.jpg" width="128" height="128" alt="可児亘（Kani Wataru）"/>
 
 ### 経歴
 
@@ -53,4 +53,4 @@ category: ''
 
 [シヤチハタ 「ShachiPon!」](https://www.aquaring.co.jp/works/shachipon)
 
-<static-img src="resource/image/about-me_pct-shachipon.jpg" width="1600" height="1081" alt="シヤチハタ 「ShachiPon!"></static-img>
+<img src="/resource/image/about-me_pct-shachipon.jpg" width="1600" height="1081" alt="シヤチハタ 「ShachiPon!"/>

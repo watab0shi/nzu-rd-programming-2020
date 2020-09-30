@@ -166,4 +166,4 @@ RGB 指定にできたら、<strong>スケッチの名前を「`background-RGB`�
 
 
 ## フロー図
-<static-img src="resource/image/p5js_flow.png" alt="保存"></static-img>
+<img src="/resource/image/p5js_flow.png" alt="保存"/>

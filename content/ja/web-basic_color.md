@@ -11,7 +11,7 @@ Red（赤） Green（緑） Blue（青） の略です。
 
 ### 光の三原色
 
-<static-img src="resource/image/web-basic_color_rgb-light.svg" width="256" height="256" alt="光の三原色"></static-img>
+<img src="/resource/image/web-basic_color_rgb-light.svg" width="256" height="256" alt="光の三原色"/>
 
 ## 24bitカラー
 
