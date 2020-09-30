@@ -11,11 +11,11 @@ export default theme({
   env: {
     baseUrl: env.BASE_URL
   },
-  generate: {
-    exclude: [
-      /^(?=.*\bresource\b).*$/
-    ]
-  },
+  // generate: {
+  //   exclude: [
+  //     /^(?=.*\bresource\b).*$/
+  //   ]
+  // },
   i18n: {
     locales: () => [
       {
