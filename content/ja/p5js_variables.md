@@ -47,8 +47,6 @@ function draw() {
 }
 ```
 
-十字の中心を変数 `x` `y` に格納して、そこを起点に `rectMode(CENTER)` で `rect` を描画することで、`x` `y` に代入する値を変更するだけで十字の位置が簡単に変更できるようになりました。
-
 <live-demo src="/resource/livedemo/p5js/variables/circle/"></live-demo>
 
 <alert type="success">
