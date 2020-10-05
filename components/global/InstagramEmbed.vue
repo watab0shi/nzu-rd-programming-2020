@@ -54,7 +54,21 @@
 
 <script>
 export default {
-  props: ['src']
+  props: ['src'],
+  mounted() {
+    this.loadEmbedJS();
+  },
+  beforeDestroy() {
+    delete window.instgrm;
+  },
+  methods: {
+    loadEmbedJS() {
+      const script = document.createElement('script');
+      script.async = script.defer = true;
+      script.src = '//www.instagram.com/embed.js';
+      this.$el.appendChild(script);
+    }
+  }
 };
 </script>
 
