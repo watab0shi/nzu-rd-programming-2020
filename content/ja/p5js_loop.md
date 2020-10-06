@@ -1,11 +1,28 @@
 ---
 title: 繰り返し
 description: ''
-position: 20.5
-category: JavaScript基礎
+position: 6.6
+category: p5.js
 ---
 
-繰り返しを表現できる <strong>while文</strong> や <strong>for文</strong> を使うと冗長な繰り返し記述を完結に書くことができます。
+同じ図形を位置だけ変えて複製したいとき、ここまでは以下のように関数実行を回数分手書きしていましたが、繰り返しを表現できる <strong>while文</strong> や <strong>for文</strong> を使うと冗長な繰り返し記述を完結に書くことができます。
+
+```javascript[sketch.js]
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+
+  // ヨコに 100 ずつずらして線を引く
+  line(100, 180, 100, 220);
+  line(200, 180, 200, 220);
+  line(300, 180, 300, 220);
+}
+```
+
+<live-demo src="/resource/livedemo/p5js/loop/plain/"></live-demo>
 
 ## while文
 
@@ -39,6 +56,31 @@ while (x < 100) {// i が 100 より小さいとき
 |4|`90`|`true`|
 |5|`120`|`false`|
 
+```javascript[sketch.js]
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+
+  let x = 100;
+  while (x < 400) {// x が 400 より小さい間繰り返す
+    line(x, 180, x, 220);
+    x += 100;// x を更新
+  }
+}
+```
+
+<live-demo src="/resource/livedemo/p5js/loop/while/"></live-demo>
+
+<alert type="success">
+
+`while` 文を使って等間隔にずらした図形を描画してみましょう！
+
+</alert>
+
+
 ## for文
 
 while文と挙動は同じですが、繰り返し用の変数定義とそれを使った継続条件/変数更新のセットで繰り返しを定義します。  
@@ -62,6 +104,14 @@ for (let i = 100; i < 400; i += 100) {
 
 </alert>
 
+<live-demo src="/resource/livedemo/p5js/loop/for/"></live-demo>
+
+<alert type="success">
+
+`while` 文を `for` 文に書き換えてみましょう！
+
+</alert>
+
 ### 繰り返す回数を指定
 
 上記のfor文の書き方だとコードを見ただけでは何回ループが回っているのかがわかりにくいため、繰り返す回数を明示する書き方に変更しましょう。
@@ -73,6 +123,12 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
+<alert type="success">
+
+`for` 文を繰り返し回数を明示する書き方に書き換えて、座標を `i` を使った計算に書き換えましょう！
+
+</alert>
+
 ## 二重for文
 
 ```javascript
@@ -83,3 +139,17 @@ for (let i = 0; i < 10; i++) {
   }
 }
 ```
+
+<alert type="success">
+
+それぞれ `x` `y` を変数に持つ二重 `for` 文をつくり、グリッド状に図形を複製しよう！
+
+</alert>
+
+<alert type="success">
+
+`x` や `y` の繰り返し回数に応じて図形の大きさや色、線幅などを変えてみよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/loop/for-double/"></live-demo>
