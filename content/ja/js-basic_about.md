@@ -41,8 +41,6 @@ Webページは `HTML` `CSS` `JavaScript` の3つの言語によって構成さ�
 </html>
 ```
 
-#### ライブデモ
-
 <live-demo src="/resource/livedemo/js-about/html/"></live-demo>
 
 「NZU Programming WS 2020」という見出しテキストを設置しただけの状態です。  
@@ -68,8 +66,6 @@ body {
   font-size: 50px;
 }
 ```
-
-#### ライブデモ
 
 <live-demo src="/resource/livedemo/js-about/html-css/"></live-demo>
 
@@ -102,7 +98,6 @@ element.onclick = function() {
 };
 ```
 
-#### ライブデモ
 見出しをクリック
 
 <live-demo src="/resource/livedemo/js-about/html-css-js/"></live-demo>
