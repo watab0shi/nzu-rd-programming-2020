@@ -1,7 +1,7 @@
 ---
 title: 繰り返し
 description: ''
-position: 6.6
+position: 6.06
 category: p5.js
 ---
 

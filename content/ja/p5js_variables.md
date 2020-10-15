@@ -1,7 +1,7 @@
 ---
 title: 変数
 description: ''
-position: 6.4
+position: 6.04
 category: p5.js
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 図形を描く
 description: ''
-position: 6.3
+position: 6.03
 category: p5.js
 ---
 

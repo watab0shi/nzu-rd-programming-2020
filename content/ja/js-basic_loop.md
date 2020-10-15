@@ -1,7 +1,7 @@
 ---
 title: 繰り返し
 description: ''
-position: 20.5
+position: 20.05
 category: JavaScript基礎
 ---
 

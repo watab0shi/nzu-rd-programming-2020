@@ -1,7 +1,7 @@
 ---
 title: 変数
 description: ''
-position: 20.3
+position: 20.03
 category: JavaScript基礎
 ---
 
@@ -55,7 +55,7 @@ let num = 123;// 変数定義 & 代入
 変数名--;// 1 を引く
 ```
 
-## データ型
+## データ型（プリミティブ型）
 
 ### 数値（Number）
 

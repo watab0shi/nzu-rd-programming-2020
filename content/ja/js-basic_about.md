@@ -1,7 +1,7 @@
 ---
 title: JavaScriptについて
 description: ''
-position: 20.0
+position: 20.00
 category: JavaScript基礎
 ---
 

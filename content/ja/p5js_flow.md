@@ -1,7 +1,7 @@
 ---
 title: 処理の流れ
 description: ''
-position: 6.2
+position: 6.02
 category: p5.js
 ---
 

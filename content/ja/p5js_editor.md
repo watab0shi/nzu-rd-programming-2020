@@ -1,7 +1,7 @@
 ---
 title: エディタの使い方
 description: ''
-position: 6.1
+position: 6.01
 category: p5.js
 ---
 

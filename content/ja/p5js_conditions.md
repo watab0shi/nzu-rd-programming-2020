@@ -1,7 +1,7 @@
 ---
 title: 条件分岐
 description: ''
-position: 6.5
+position: 6.05
 category: p5.js
 ---
 

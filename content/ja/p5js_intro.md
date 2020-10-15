@@ -1,7 +1,7 @@
 ---
 title: p5.jsについて
 description: ''
-position: 6.0
+position: 6.00
 category: p5.js
 ---
 

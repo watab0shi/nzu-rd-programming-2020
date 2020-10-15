@@ -1,7 +1,7 @@
 ---
 title: コメント
 description: ''
-position: 20.1
+position: 20.01
 category: JavaScript基礎
 ---
 
