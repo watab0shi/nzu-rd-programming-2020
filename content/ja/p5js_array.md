@@ -47,7 +47,6 @@ for (let i = 0; i < arr2.length; i++) {
 スケッチ名：`array-graph`  
 配列とfor文を使って棒グラフを書いてみよう！  
 ヒント：`let data = [100, 200...];` で `0` ~ `400` の適当な値を10個配列に入れて、 `for` 文と `rect` で表示。ひとつの幅は `let step = width / data.length;` 。  
-補足：棒グラフの隙間はできたらでOKです。
 
 </alert>
 
