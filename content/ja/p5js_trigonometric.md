@@ -24,7 +24,7 @@ let y = 200 + sin(angle) * r;
 <alert type="success">
 
 スケッチ名：`transform-translate`  
-`sin` `cos` 関数を使って、座標変換を使わずに円周上に回る円を描画してみよう！  
+`sin` `cos` 関数を使って、<strong>座標変換を使わずに</strong>円周上に回る円を描画してみよう！  
 
 </alert>
 
@@ -33,7 +33,7 @@ let y = 200 + sin(angle) * r;
 <alert type="success">
 
 スケッチ名：`transform-translate`  
-`sin` `cos` 関数を使って、座標変換を使わずに30個の円を円周上に配置してみよう！
+`sin` `cos` 関数を使って、座標変換を使わずに<strong>30個の円を円周上に配置</strong>してみよう！
 
 </alert>
 

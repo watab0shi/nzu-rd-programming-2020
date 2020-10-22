@@ -8,7 +8,7 @@ function draw() {
   let sec = millis() / 1000;
   let angle = sec;
   let r = 150;
-  let x = width / 2 + cos(angle * 3) * r;
+  let x = width / 2 + cos(angle) * r;
   let y = height / 2 + sin(angle) * r;
 
   noStroke();
