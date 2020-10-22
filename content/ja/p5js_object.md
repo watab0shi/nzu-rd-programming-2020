@@ -45,6 +45,34 @@ console.log(data.color.r);// 100
 
 </alert>
 
+## 図形のプロパティをオブジェクトで表現する
+
+```javascript
+let obj = {
+  x: 200,
+  y: 200,
+  width: 200,
+  height: 50
+};
+```
+
+<alert type="success">
+
+スケッチ名：`object-simple`  
+矩形の 位置 / 幅 / 高さ をオブジェクトで定義して、`rect` の引数にいれよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/object/object-simple/"></live-demo>
+
+<alert type="success">
+
+スケッチ名：`object-simple-color`  
+`obj` に `color` というキーを追加し、`color` に `r` `g` `b` の数値を持つオブジェクトを設定して、矩形の色に反映させてみよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/object/object-simple-color/"></live-demo>
 
 ## オブジェクトの配列
 

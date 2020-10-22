@@ -22,7 +22,8 @@ translate(200, 200);// (200, 200)に原点を移動させる
 <alert type="success">
 
 スケッチ名：`transform-translate`  
-`transform` 関数を使って、マウス座標に矩形を描画してみよう！
+`translate` 関数を使って、マウス座標に矩形を描画してみよう！  
+ヒント：`rect(0, 0, 100, 100);`
 
 </alert>
 
@@ -112,19 +113,55 @@ scale(1, 2);// Y だけ 200% に拡大
 
 push();// 変換前の座標を保存
 translate(200, 200);// 原点を移動
-rotate(PI);
-scale(0.5);
+rotate(PI);// 180° 回転
+scale(0.5);// XY を 50% に縮小
 pop();// 変換前の座標を復元
 
 // 変換前の座標
 ```
 
-## 応用編
+### 等角度配置
+
+`rotate`と`for`文を組み合わせることで、簡単に等角度での配置をつくることができます。
+
+```javascript
+let NUM = 3;
+
+translate(width / 2, height / 2);// 原点を中心に移動
+
+for (let i = 0; i < NUM; i++) {
+  push();
+  rotate(i * TWO_PI / NUM);// 回転
+  // 図形を描画
+  pop();
+}
+```
 
 <alert type="success">
 
-スケッチ名：`transform-snow-01` `transform-snow-02` `transform-snow-03`  
-座標変換 と `for`文 を駆使して <strong>雪の結晶を3パターン描いてみよう！</strong>  
+スケッチ名：`transform-align-angle`  
+`for` 文と `push` `pop` `transfrom` `roate` を駆使して正多角形の点上に矩形を配置してみよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/transform/align-angle/"></live-demo>
+
+
+<alert type="success">
+
+スケッチ名：`transform-align-angle-rotate`  
+正多角形の点上に配置した矩形をそれぞれの中心で回転させてみよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/transform/align-angle-rotate/"></live-demo>
+
+## 応用編１
+
+<alert type="success">
+
+スケッチ名：`transform-snow-01` `transform-snow-02` `transform-snow-03` `transform-snow-04` `transform-snow-05`  
+座標変換 と `for`文 を駆使して <strong>雪の結晶を5パターン描いてみよう！</strong>  
 線の数や太さを変えたり、円や矩形をあしらってもOK！  
 ヒント：上（または下）向きに伸びる一本の枝を描く関数を自分で作ってそれを `for`文 で60°ずつ回転させながら6回繰り返す
 
@@ -133,7 +170,39 @@ pop();// 変換前の座標を復元
 <live-demo src="/resource/livedemo/p5js/transform/snow-1/"></live-demo>
 <live-demo src="/resource/livedemo/p5js/transform/snow-2/"></live-demo>
 <live-demo src="/resource/livedemo/p5js/transform/snow-3/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/transform/snow-4/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/transform/snow-5/"></live-demo>
 
-```
+## 応用編２
 
-```
+<alert type="success">
+
+スケッチ名：`transform-clock`  
+座標変換 と `for`文 を駆使して <strong>アナログ時計を描いてみよう！</strong>  
+ヒント：`map`関数を使って時間の値の範囲を角度に割り当てる。
+
+</alert>
+
+### 時間の取得
+
+時 / 分 / 秒 の数値はそれぞれ以下の関数で取得することができます。
+
+`hour`：`0` ~ `23` で現在の時間を返す。  
+[hour() reference | p5.js](https://p5js.org/reference/#/p5/hour)
+
+`minute`：`0` ~ `59` で現在の分を返す。  
+[minute() reference | p5.js](https://p5js.org/reference/#/p5/minute)
+
+`second`：`0` ~ `59` で現在の秒を返す。  
+[second() reference | p5.js](https://p5js.org/reference/#/p5/second)
+
+<live-demo src="/resource/livedemo/p5js/transform/clock/"></live-demo>
+
+<alert type="success">
+
+スケッチ名：`transform-accurate`  
+<strong>長針と短針に秒と分も反映</strong>されるようにしよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/transform/clock-accurate/"></live-demo>

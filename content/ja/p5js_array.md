@@ -5,6 +5,149 @@ position: 6.09
 category: p5.js
 ---
 
+## 配列の書き方
+
+```javascript
+// 書き方
+let 変数名 = [];// 空の配列を作成
+let 変数名 = [データ1, データ2, データ3];// 配列作成と同時にデータを格納
+変数名[インデックス（何番目）];// インデックス番目のデータを取り出す（0始まりなので先頭は[0]）
+変数名.push(データ);// 配列の末尾にデータを追加
+変数名.length;// 配列の長さ（要素数）を取得
+
+// サンプル
+let arr1 = [123, 0.75, 2];// 初期化代入
+console.log(arr1[0]);// 123
+console.log(arr1[1]);// 0.75
+console.log(arr1[2]);// 2
+
+let arr2 = [];// 空の配列を作成
+arr2.push(123);// 配列.push() でデータを追加
+arr2.push(0.75);
+arr2.push(2);
+console.log(arr1[0]);// 123
+console.log(arr1[1]);// 0.75
+console.log(arr1[2]);// 2
+
+// for文で配列を回す
+for (let i = 0; i < arr2.length; i++) {
+  console.log(arr2[i]);// 123 0.75 2
+}
+```
+
+|[ 0 ]|[ 1 ]|[ 2 ]|
+|:--|:--|:--|
+|`123`|`0.75`|`2`|
+
+
+## グラフを描く
+
+<alert type="success">
+
+スケッチ名：`array-graph`  
+配列とfor文を使って棒グラフを書いてみよう！  
+ヒント：`let data = [100, 200...];` で `0` ~ `400` の適当な値を10個配列に入れて、 `for` 文と `rect` で表示。ひとつの幅は `let step = width / data.length;` 。  
+補足：棒グラフの隙間はできたらでOKです。
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/array/array-graph/"></live-demo>
+
+<alert type="success">
+
+スケッチ名：`array-graph-advanced`  
+棒グラフの隙間をあけ、目盛りを追加してグラフを見やすくしてみよう！  
+ヒント：`rect(x + 5, y, w - 10, h)`
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/array/array-graph-advanced/"></live-demo>
+
+### ランダム
+
+`random` 関数で任意の範囲内のランダムな数値を取得することができます。
+
+[random() reference | p5.js](https://p5js.org/reference/#/p5/random)
+
+<alert type="warning ">
+
+`random` 関数は `p5.js` 側の関数のため、`setup` 関数が実行されるまで使えません！  
+`p5.js` 側の関数をつかって変数を初期化したい場合、宣言時には一時的な値を入れておいて、`setup`関数内で代入するようにしましょう！
+
+</alert>
+
+```javascript
+// let rand = random(-1, 1);// エラー！
+let rand = 0;// 一旦 0 を入れておく
+
+function setup() {
+  ...
+  rand = random(-1, 1);// -1 ~ -1 の範囲のランダムな値を取得
+}
+```
+
+<alert type="success">
+
+スケッチ名：`array-graph-random`  
+配列とfor文を使って棒グラフを書いてみよう！  
+ヒント：配列の個数を変数で定義 `let NUM = 10;` 、空の配列で初期化 `let data = [];` して、`data.push(random(0, 400))` で配列に`0` ~ `400` のランダムな値を追加。
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/array/array-graph-random/"></live-demo>
+
+## 二重配列
+
+配列の中に配列を入れることで、二重配列をつくることができます。
+
+```javascript
+// 初期化代入する方法
+let arr1 = [
+  [0.1, 2.34, 52],
+  [3.2, 40, 8.3],
+  [79, 23.1, 10.7]
+];
+console.log(arr1[0]);// [0.1, 2.34, 52]
+console.log(arr1[0][1]);// 2.34
+console.log(arr1[2]);// [79, 23.1, 10.7]
+console.log(arr1[2][2]);// 10.7
+```
+
+||[ 0 ]|[ 1 ]|[ 2 ]|
+|:--|:--|:--|:--|
+|<strong>arr[ 0 ]</strong>|0.1|2.34|52|
+|<strong>arr[ 1 ]</strong>|3.2|40|8.3|
+|<strong>arr[ 2 ]</strong>|79|23.1|10.7|
+
+```javascript
+// あとから追加する方法
+let NUM = 3;
+let arr2 = [];// 空の配列
+
+for (let y = 0; y < NUM; y++) {
+  let arr = [];// 一行分の配列
+  for (let x = 0; x < NUM; x++) {
+    arr.push(random(0, 100));
+  }
+  arr2.push(arr);
+}
+
+for (let y = 0; y < arr2.length; y++) {
+  for (let x = 0; x < arr2[y].length; x++) {// arr2[y] で一行分の配列を取得
+    console.log(y, x, arr[y][x]);
+  }
+}
+```
+
+<alert type="success">
+
+スケッチ名：`array-double`  
+`5 x 5` のランダムな値を入れた二重配列を作って、配列の値を直径とする円をグリッド上に描画してみよう！
+
+</alert>
+
+<live-demo src="/resource/livedemo/p5js/array/array-double/"></live-demo>
+
 ## 大量の円を動かす
 
 配列（`Array`）を使用すると、大量のデータの管理が簡単にできます。
@@ -65,34 +208,6 @@ function draw() {
 
 ### 配列で複製する
 
-```javascript
-// 書き方
-let 変数名 = [];// 空の配列を作成
-let 変数名 = [データ1, データ2, データ3];// 配列作成と同時にデータを格納
-変数名[インデックス（何番目）];// インデックス番目のデータを取り出す（0始まりなので先頭は[0]）
-変数名.push(データ);// 配列の末尾にデータを追加
-変数名.length;// 配列の長さ（要素数）を取得
-
-// サンプル
-let arr1 = [123, 0.75, 2];// 初期化代入
-console.log(arr1[0]);// 123
-console.log(arr1[1]);// 0.75
-console.log(arr1[2]);// 2
-
-let arr2 = [];// 空の配列を作成
-arr2.push(123);// 配列.push() でデータを追加
-arr2.push(0.75);
-arr2.push(2);
-console.log(arr1[0]);// 123
-console.log(arr1[1]);// 0.75
-console.log(arr1[2]);// 2
-
-// for文で配列を回す
-for (let i = 0; i < arr2.length; i++) {
-  console.log(arr2[i]);// 123 0.75 2
-}
-```
-
 <alert type="success">
 
 スケッチ名：`array-cirle`  
@@ -118,27 +233,6 @@ for (let i = 0; i < arr2.length; i++) {
 </alert>
 
 <live-demo src="/resource/livedemo/p5js/array/array-circle-random/"></live-demo>
-
-`random` 関数で任意の範囲内のランダムな数値を取得することができます。
-
-[random() reference | p5.js](https://p5js.org/reference/#/p5/random)
-
-<alert type="warning ">
-
-`random` 関数は `p5.js` 側の関数のため、`setup` 関数が実行されるまで使えません！  
-`p5.js` 側の関数をつかって変数を初期化したい場合、宣言時には一時的な値を入れておいて、`setup`関数内で代入するようにしましょう！
-
-</alert>
-
-```javascript
-// let rand = random(-1, 1);// エラー！
-let rand = 0;// 一旦 0 を入れておく
-
-function setup() {
-  ...
-  rand = random(-1, 1);
-}
-```
 
 ### 要素数を簡単に変更できるようにする
 
