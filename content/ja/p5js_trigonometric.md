@@ -17,14 +17,14 @@ category: p5.js
 `y=cos(x)`で[Google検索](https://www.google.com/search?q=y%3Dcos(x))  
 <img src="/resource/image/p5js_trigonometric_cos.png"/>
 
-<alert type="success">
+<!-- <alert type="success">
 
 スケッチ名：`trigonometric-sin-cos`  
 `sin` または `cos` 関数を使って、描画してみよう！  
 
 </alert>
 
-<live-demo src="/resource/livedemo/p5js/trigonometric/sin-cos/"></live-demo>
+<live-demo src="/resource/livedemo/p5js/trigonometric/sin-cos/"></live-demo> -->
 
 ## 円周上の座標を算出する
 
