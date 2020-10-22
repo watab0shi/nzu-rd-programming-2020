@@ -210,7 +210,7 @@ for (let i = 0; i < NUM; i++) {
 
 <alert type="success">
 
-スケッチ名：`transform-accurate`  
+スケッチ名：`transform-clock-accurate`  
 <strong>長針と短針に秒と分も反映</strong>されるようにしよう！
 
 </alert>
