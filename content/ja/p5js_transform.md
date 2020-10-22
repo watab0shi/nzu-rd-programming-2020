@@ -88,7 +88,7 @@ scale(1, 2);// Y だけ 200% に拡大
 
 <alert type="success">
 
-スケッチ名：`transform-scale`  
+スケッチ名：`transform-scale-xy`  
 `scale` 関数を使って、マウス座標に応じて座標系の `x` 軸 `y` 軸を 拡大 / 縮小 させてみよう！  
 ヒント：`translate(width / 2, height / 2);` `map`関数でマウス座標の範囲を変換。`square(0, 0, 100);`
 
