@@ -1,5 +1,3 @@
-let NUM = 30;
-
 function setup() {
   createCanvas(400, 400);
 }

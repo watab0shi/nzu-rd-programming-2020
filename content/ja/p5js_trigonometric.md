@@ -82,6 +82,13 @@ rect(0, 0, width, height);
 
 [リサジュー図形 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%AA%E3%82%B5%E3%82%B8%E3%83%A5%E3%83%BC%E5%9B%B3%E5%BD%A2)
 
+<alert type="success">
+
+スケッチ名：`trigonometric-lissajous`  
+`sin` `cos` 関数の引数に数を掛けて、リサジュー図形を描いてみよう！
+
+</alert>
+
 `x = cos(angle)`  
 `y = sin(angle * 3)`
 <live-demo src="/resource/livedemo/p5js/trigonometric/lissajous-1/"></live-demo>
