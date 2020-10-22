@@ -173,7 +173,7 @@ for (let i = 0; i < NUM; i++) {
 スケッチ名：`transform-snow-01` `transform-snow-02` `transform-snow-03` `transform-snow-04` `transform-snow-05`  
 座標変換 と `for`文 を駆使して <strong>雪の結晶を5パターン描いてみよう！</strong>  
 線の数や太さを変えたり、円や矩形をあしらってもOK！  
-ヒント：上（または下）向きに伸びる一本の枝を描く関数を自分で作ってそれを `for`文 で60°ずつ回転させながら6回繰り返す
+ヒント：上向きに伸びる一本の枝を描く処理を `for`文 で60°ずつ回転させながら6回繰り返す
 
 </alert>
 
