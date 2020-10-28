@@ -1,7 +1,7 @@
 ---
 title: クラス
 description: ''
-position: 6.13
+position: 6.14
 category: p5.js
 ---
 

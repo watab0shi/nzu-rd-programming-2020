@@ -1,7 +1,7 @@
 ---
 title: 三角関数
 description: ''
-position: 6.12
+position: 6.13
 category: p5.js
 ---
 
