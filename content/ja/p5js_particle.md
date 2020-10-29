@@ -394,7 +394,7 @@ function draw() {
 
 ### 画面いっぱいにスケッチを表示する
 
-これまで `createCanvas(400, 400)` で `400px x 400px` の固定サイズてやってきましたが、`createCanvas` に `windowWidth` `windowHeight` をいれることでウィンドウいっぱいのサイズでスケッチを作ることができます。
+これまで `createCanvas(400, 400)` で `400px x 400px` の固定サイズでやってきましたが、`createCanvas` に `windowWidth` `windowHeight` をいれることでウィンドウいっぱいのサイズでスケッチを作ることができます。
 
 ```javascript[sketch.js]
 function setup() {
@@ -428,6 +428,12 @@ function windowResized() {
 ## 応用編
 
 以下の例を参考にして、<strong>値の調整やグラフィックの追加、インタラクションの追加をしてスケッチにオリジナリティを出してみましょう！</strong>
+
+<alert type="success">
+
+スケッチ名：`particle-snow-advanced-01` `particle-snow-advanced-02` ...  
+
+</alert>
 
 <alert type="success">背景や雪の<strong>色を変えてみる。</strong></alert>
 <alert type="success">雪の結晶の多きさや、降る速さの<strong>ランダム値の範囲を変えてみる。</strong></alert>
