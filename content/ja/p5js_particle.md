@@ -440,7 +440,32 @@ function windowResized() {
 <alert type="success"><strong>雪の結晶の種類を増やしてみる。</strong></alert>
 <alert type="success"><strong>雪の降る向きを変えてみる。</strong></alert>
 <alert type="success">背景に木や雪だるま、かまくらなど<strong>装飾を足してみる。</strong></alert>
-<alert type="success"><strong>マウスが重なると雪の色が変わる。</strong>（ヒント：[dist() reference | p5.js](https://p5js.org/reference/#/p5/dist)）</alert>
+<alert type="success">
+
+<strong>マウスが重なると雪の色が変わる。</strong>（ヒント：[dist() reference | p5.js](https://p5js.org/reference/#/p5/dist)）  
+<a href="/resource/livedemo/p5js/particle/snow-advanced-hover/" target="_blank">デモ</a>
+
+</alert>
+
 <alert type="success">常にランダムな種類ではなく、<strong>時計の時間によって種類が変わる。</strong></alert>
-<alert type="success">常にランダムな種類ではなく、<strong>マウスクリックで１種類ずつ変わる。</strong></alert>
-<alert type="success">常にランダムな種類ではなく、<strong>キーの `1` ~ `5` を押したら種類が変わる。</strong></alert>
+
+<alert type="success">
+
+常にランダムな種類ではなく、<strong>マウスクリックで１種類ずつ変わる。</strong>  
+<a href="/resource/livedemo/p5js/particle/snow-advanced-click/" target="_blank">デモ</a>
+
+</alert>
+
+<alert type="success">
+
+常にランダムな種類ではなく、<strong>キーの `1` ~ `5` を押したら種類が変わる。</strong>  
+<a href="/resource/livedemo/p5js/particle/snow-advanced-key/" target="_blank">デモ</a>
+
+</alert>
+
+<alert type="success">
+
+結晶がループした回数をカウントしてテキストで表示してみる  
+<a href="/resource/livedemo/p5js/particle/snow-advanced-loop-count/" target="_blank">デモ</a>
+
+</alert>
