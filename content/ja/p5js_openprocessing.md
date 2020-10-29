@@ -5,7 +5,7 @@ position: 6.90
 category: p5.js
 ---
 
-[OpenProcessing](https://www.openprocessing.org/browse/#)
+[OpenProcessing](https://www.openprocessing.org)
 
 <alert type="success">
 
