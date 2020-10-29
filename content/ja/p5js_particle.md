@@ -439,7 +439,14 @@ function windowResized() {
 <alert type="success">雪の結晶の多きさや、降る速さの<strong>ランダム値の範囲を変えてみる。</strong></alert>
 <alert type="success"><strong>雪の結晶の種類を増やしてみる。</strong></alert>
 <alert type="success"><strong>雪の降る向きを変えてみる。</strong></alert>
-<alert type="success">背景に木や雪だるま、かまくらなど<strong>装飾を足してみる。</strong></alert>
+
+<alert type="success">
+
+背景に木や雪だるま、かまくらなど<strong>装飾を足してみる。</strong>  
+<a href="/resource/livedemo/p5js/particle/snow-advanced-decoration/" target="_blank">デモ</a>
+
+</alert>
+
 <alert type="success">
 
 <strong>マウスが重なると雪の色が変わる。</strong>（ヒント：[dist() reference | p5.js](https://p5js.org/reference/#/p5/dist)）  
